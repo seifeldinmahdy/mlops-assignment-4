@@ -10,6 +10,8 @@ jobs:
   validate-and-test:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout Code
+        uses: actions/Checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
